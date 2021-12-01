@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Condicoes</title>
+    <style>
+        input#idade{
+            width: 100px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Verificando Maior Idade</h1>
+    
+    Qual a Sua Idade: <input type="number" name="idade" id="idade">
+    <input type="button" value="Consultar" onclick="consulta()">
+    
+    <div id="resultado"></div>
+    
+    <script>
+        function consulta(){
+            var dig = window.document.querySelector('input#idade')
+            var idade = Number(dig.value)
+            var res = window.document.querySelector('div#resultado')
+            res.innerHTML = (`<p>Sua Idade é de ${idade}Anos</p>`)
+            if(idade >= 18){
+                res.innerHTML += (`<p>Voce Tem ${idade}Anos e ja é <strong>Maior de Idade!</strong></p>`)
+            }
+            else{
+                res.innerHTML += (`<p>Voce tem ${idade}Anos e <strong>ainda não atingiu</strong> a Maior Idade</p>`)
+           }
+        }   
+    </script>
+</body>
+</html>
