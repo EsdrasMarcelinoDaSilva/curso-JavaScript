@@ -1,0 +1,34 @@
+body{
+    background-color: rgb(23, 153, 153);
+}
+h1{
+    text-align: center;
+}
+#txtn{
+    width: 50px;
+    border-style: solid;
+}
+#txtb{
+    background-color: blue;
+    color: white;
+    font-weight: bold;
+} 
+select{
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.315);
+    color:blue;
+}
+section{
+    background-color:gray;
+    border-radius: 10px;
+    font-weight: bolder;
+    margin: auto;
+    width: 300px;
+    height: 300px;
+    padding: 15px;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.349);
+}
+footer{
+    text-align: center;
+    font-style: italic;
+    font-weight: bold;
+}
