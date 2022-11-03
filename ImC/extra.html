@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Extra</title>
+    <style>
+        body{
+            background-color: rgb(77, 170, 170);
+            font-size: 30px;
+        }
+        input#kilo{
+            width: 80px;
+            height: 30px;
+            font-size: 30px;
+        }
+    </style>
+</head>
+<body>
+    Digite seu Peso <input type="number" name="peso" id="kilo">
+    <input type="button" value="calculo" onclick="calc()">
+    <div class="res"></div>
+    <script>
+        function calc(){
+        var ps = document.querySelector('input#kilo')
+        var kl = Number(kilo.value)
+        var res = document.querySelector('div.res')
+        var img = document.createElement('img')
+        res.innerHTML = `<p>Seu peso atual é ${kl}kg</p>`
+        if(kl >= 80){
+            res.innerHTML += `VOCE ESTA OBESO!`
+        }else if(kl < 80 && kl >= 60){
+            res.innerHTML += ` VOCE ESTA COM PESO IDEAL`
+        }else{
+            res.innerHTML += `VOCE ESTA MAGRO`
+        }
+        }
+       
+       
+    </script>
+</body>
+</html>
