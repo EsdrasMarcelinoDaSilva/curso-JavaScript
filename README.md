@@ -1,2 +1,2 @@
 # curso-JavaScript
- aulas-js
+com mini-projetos
